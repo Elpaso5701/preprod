@@ -19,7 +19,6 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: preprod
     spec:
@@ -42,3 +41,4 @@ spec:
       - name: storage
         persistentVolumeClaim:
           claimName: preprod-pvc
+
